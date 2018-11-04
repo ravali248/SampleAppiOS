@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6895421218F737800A7F7AF /* SampleAppJenkinsIOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6895420218F737800A7F7AF /* SampleAppJenkinsIOSUITests.m */; };
+		A689542A218F791000A7F7AF /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6895428218F790F00A7F7AF /* HockeySDK.framework */; };
+		A689542B218F791000A7F7AF /* HockeySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6895428218F790F00A7F7AF /* HockeySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A689542C218F791000A7F7AF /* HockeySDKResources.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = A6895429218F790F00A7F7AF /* HockeySDKResources.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E51FDBBD218A0C920018BF3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FDBBC218A0C920018BF3B /* AppDelegate.m */; };
 		E51FDBC0218A0C920018BF3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FDBBF218A0C920018BF3B /* ViewController.m */; };
 		E51FDBC3218A0C920018BF3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51FDBC1218A0C920018BF3B /* Main.storyboard */; };
@@ -15,7 +19,47 @@
 		E51FDBCB218A0C940018BF3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FDBCA218A0C940018BF3B /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A6895423218F737800A7F7AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E51FDBB0218A0C920018BF3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E51FDBB7218A0C920018BF3B;
+			remoteInfo = SampleAppJenkinsIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A68953FC218F71BD00A7F7AF /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A689542C218F791000A7F7AF /* HockeySDKResources.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68953FD218F71BD00A7F7AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A689542B218F791000A7F7AF /* HockeySDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A689541E218F737800A7F7AF /* SampleAppJenkinsIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppJenkinsIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6895420218F737800A7F7AF /* SampleAppJenkinsIOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppJenkinsIOSUITests.m; sourceTree = "<group>"; };
+		A6895422218F737800A7F7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6895428218F790F00A7F7AF /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-iOS/HockeySDK.embeddedframework/HockeySDK.framework"; sourceTree = "<group>"; };
+		A6895429218F790F00A7F7AF /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HockeySDKResources.bundle; path = "HockeySDK-iOS/HockeySDK.embeddedframework/HockeySDKResources.bundle"; sourceTree = "<group>"; };
 		E51FDBB8218A0C920018BF3B /* SampleAppJenkinsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppJenkinsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51FDBBB218A0C920018BF3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E51FDBBC218A0C920018BF3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,20 +73,40 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E51FDBB5218A0C920018BF3B /* Frameworks */ = {
+		A689541B218F737800A7F7AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E51FDBB5218A0C920018BF3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A689542A218F791000A7F7AF /* HockeySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A689541F218F737800A7F7AF /* SampleAppJenkinsIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6895420218F737800A7F7AF /* SampleAppJenkinsIOSUITests.m */,
+				A6895422218F737800A7F7AF /* Info.plist */,
+			);
+			path = SampleAppJenkinsIOSUITests;
+			sourceTree = "<group>";
+		};
 		E51FDBAF218A0C920018BF3B = {
 			isa = PBXGroup;
 			children = (
+				A6895428218F790F00A7F7AF /* HockeySDK.framework */,
+				A6895429218F790F00A7F7AF /* HockeySDKResources.bundle */,
 				E51FDBBA218A0C920018BF3B /* SampleAppJenkinsIOS */,
+				A689541F218F737800A7F7AF /* SampleAppJenkinsIOSUITests */,
 				E51FDBB9218A0C920018BF3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				E51FDBB8218A0C920018BF3B /* SampleAppJenkinsIOS.app */,
+				A689541E218F737800A7F7AF /* SampleAppJenkinsIOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +139,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A689541D218F737800A7F7AF /* SampleAppJenkinsIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6895425218F737800A7F7AF /* Build configuration list for PBXNativeTarget "SampleAppJenkinsIOSUITests" */;
+			buildPhases = (
+				A689541A218F737800A7F7AF /* Sources */,
+				A689541B218F737800A7F7AF /* Frameworks */,
+				A689541C218F737800A7F7AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6895424218F737800A7F7AF /* PBXTargetDependency */,
+			);
+			name = SampleAppJenkinsIOSUITests;
+			productName = SampleAppJenkinsIOSUITests;
+			productReference = A689541E218F737800A7F7AF /* SampleAppJenkinsIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E51FDBB7218A0C920018BF3B /* SampleAppJenkinsIOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E51FDBCE218A0C940018BF3B /* Build configuration list for PBXNativeTarget "SampleAppJenkinsIOS" */;
@@ -81,6 +164,8 @@
 				E51FDBB4218A0C920018BF3B /* Sources */,
 				E51FDBB5218A0C920018BF3B /* Frameworks */,
 				E51FDBB6218A0C920018BF3B /* Resources */,
+				A68953FC218F71BD00A7F7AF /* Embed PlugIns */,
+				A68953FD218F71BD00A7F7AF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,9 +182,14 @@
 		E51FDBB0218A0C920018BF3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Ravali;
 				TargetAttributes = {
+					A689541D218F737800A7F7AF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E51FDBB7218A0C920018BF3B;
+					};
 					E51FDBB7218A0C920018BF3B = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -119,11 +209,19 @@
 			projectRoot = "";
 			targets = (
 				E51FDBB7218A0C920018BF3B /* SampleAppJenkinsIOS */,
+				A689541D218F737800A7F7AF /* SampleAppJenkinsIOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A689541C218F737800A7F7AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E51FDBB6218A0C920018BF3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +235,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A689541A218F737800A7F7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6895421218F737800A7F7AF /* SampleAppJenkinsIOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E51FDBB4218A0C920018BF3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +254,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6895424218F737800A7F7AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E51FDBB7218A0C920018BF3B /* SampleAppJenkinsIOS */;
+			targetProxy = A6895423218F737800A7F7AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E51FDBC1218A0C920018BF3B /* Main.storyboard */ = {
@@ -169,6 +283,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A6895426218F737800A7F7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SampleAppJenkinsIOSUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cts.SampleAppJenkinsIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleAppJenkinsIOS;
+			};
+			name = Debug;
+		};
+		A6895427218F737800A7F7AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SampleAppJenkinsIOSUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cts.SampleAppJenkinsIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleAppJenkinsIOS;
+			};
+			name = Release;
+		};
 		E51FDBCC218A0C940018BF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -288,6 +444,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LSVVD8ZPH6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = SampleAppJenkinsIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +467,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LSVVD8ZPH6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = SampleAppJenkinsIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -322,6 +486,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A6895425218F737800A7F7AF /* Build configuration list for PBXNativeTarget "SampleAppJenkinsIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6895426218F737800A7F7AF /* Debug */,
+				A6895427218F737800A7F7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E51FDBB3218A0C920018BF3B /* Build configuration list for PBXProject "SampleAppJenkinsIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

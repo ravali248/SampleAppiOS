@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *appName;
+- (IBAction)tapMe:(id)sender;
 
 @end
 
@@ -20,4 +22,7 @@
 }
 
 
+- (IBAction)tapMe:(id)sender {
+    
+}
 @end
