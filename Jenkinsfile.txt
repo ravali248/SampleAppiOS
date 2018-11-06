@@ -1,21 +1,7 @@
 node('iOS Node') {
 
-    stage('Checkout/Build/Test') {
+    stage('Build') {
 
-        // Checkout files.
-        checkout([
-            $class: 'GitSCM',
-            branches: [[name: 'master']],
-            doGenerateSubmoduleConfigurations: false,
-            extensions: [], submoduleCfg: [],
-            userRemoteConfigs: [[
-                name: 'github',
-		credentialsId: '',
-                url: 'https://github.com/ravali248/SampleAppiOS.git'
-            ]]
-        ])
-
-        // Build and Test
-        sh 'xcodebuild -project SampleAppJenkinsIOS/SampleAppJenkinsIOS.xcodeproj -scheme "SampleAppJenkinsIOS" -configuration "Debug" build'
+        echo building 
     }
 }
