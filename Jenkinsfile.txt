@@ -5,8 +5,6 @@ node () {
 	}
 
 	stage ('TestAppiOS - Build') {
-	script {
- 	xcodeBuild appURL: '', assetPackManifestURL: '', buildDir: '', buildIpa: true, bundleID: '', bundleIDInfoPlistPath: '', cfBundleShortVersionStringValue: '', cfBundleVersionValue: '', cleanBeforeBuild: false, configuration: 'Release', developmentTeamID: 'LSVVD8ZPH6', developmentTeamName: '', displayImageURL: '', fullSizeImageURL: '', generateArchive: true, ipaExportMethod: 'enterprise', ipaName: 'SampleAppJenkinsIOS', ipaOutputDirectory: '', keychainName: '', keychainPath: '', keychainPwd: '', logfileOutputDirectory: '', provisioningProfiles: [[provisioningProfileAppId: 'com.cognizantmobilityenterprise.-', provisioningProfileUUID: 'CognizantEnterpriseMobility']], sdk: '', signingMethod: 'manual', symRoot: '', target: '', thinning: '', xcodeProjectFile: '', xcodeProjectPath: 'SampleAppJenkinsIOS', xcodeSchema: 'SampleAppJenkinsIOS', xcodeWorkspaceFile: '', xcodebuildArguments: ''
+		echo Build 
 	}
- }
 }
