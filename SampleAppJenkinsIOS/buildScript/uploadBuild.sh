@@ -1,7 +1,7 @@
 HOCKEY_API_TOKEN="7ae8e38f3771453c8ea7c61811be178f"
 APP_IDENTIFIER="fc42084aeeac4a59bd4e57708cb475d8"
 cd ..
-cd build
+cd buildScript
 cd SampleAppJenkinsIOS
 #upload to hockey
 curl \
