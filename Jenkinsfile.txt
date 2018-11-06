@@ -1,7 +1,10 @@
-node('iOS Node') {
-
-    stage('Build') {
-
-        echo "building" 
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
 }
