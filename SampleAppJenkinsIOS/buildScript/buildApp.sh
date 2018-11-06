@@ -1,12 +1,13 @@
 
 archiveFile="../build/SampleAppJenkinsIOS/SampleAppJenkinsIOS.xcarchive"
-exportPlistFile="export.plist"
+exportPlistFile="buildScript/export.plist"
 
 echo GENERATING ARCHIVE FILE...
+cd ..
 
 xcodebuild\
  -sdk iphoneos\
- -project "../SampleAppJenkinsIOS.xcodeproj"\
+ -project "SampleAppJenkinsIOS.xcodeproj"\
  -scheme "SampleAppJenkinsIOS"\
   clean archive\
  -archivePath "${archiveFile}"
@@ -25,7 +26,7 @@ echo GENERATING EXPORT FILE...
 xcodebuild\
  -exportArchive\
  -archivePath "${archiveFile}"\
- -exportPath "../build/SampleAppJenkinsIOS$1"\
+ -exportPath "build/SampleAppJenkinsIOS$1"\
  -exportOptionsPlist "${exportPlistFile}"
 
 #Check exit status
