@@ -1,5 +1,5 @@
 
-archiveFile="../build/SampleAppJenkinsIOS/SampleAppJenkinsIOS.xcarchive"
+archiveFile="build/SampleAppJenkinsIOS/SampleAppJenkinsIOS.xcarchive"
 exportPlistFile="buildScript/export.plist"
 
 echo GENERATING ARCHIVE FILE...
