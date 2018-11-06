@@ -2,6 +2,6 @@ node('iOS Node') {
 
     stage('Build') {
 
-        echo building 
+        echo "building" 
     }
 }
