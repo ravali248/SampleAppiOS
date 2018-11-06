@@ -18,3 +18,4 @@ node('iOS Node') {
         // Build and Test
         sh 'xcodebuild -project SampleAppJenkinsIOS/SampleAppJenkinsIOS.xcodeproj -scheme "SampleAppJenkinsIOS" -configuration "Debug" build'
     }
+}
