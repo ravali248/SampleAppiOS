@@ -3,7 +3,7 @@ archiveFile="build/SampleAppJenkinsIOS/SampleAppJenkinsIOS.xcarchive"
 exportPlistFile="buildScript/export.plist"
 
 echo GENERATING ARCHIVE FILE...
-cd ..
+#cd ..
 
 xcodebuild\
  -sdk iphoneos\
