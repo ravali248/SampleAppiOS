@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.5142857142857142" branch-rate="1.0000000000000000" lines-covered="18" lines-valid="35" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1543630229" version="Slather 2.4.6">
+<coverage line-rate="0.5142857142857142" branch-rate="1.0000000000000000" lines-covered="18" lines-valid="35" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1543631165" version="Slather 2.4.6">
   <sources>
-    <source>/Users/ravali/Documents/cts/jenkinsCode/SampleAppiOS/SampleAppJenkinsIOS</source>
+    <source>/Users/ravali/Documents/cts/jenkinsCode/SampleAppiOS</source>
   </sources>
   <packages>
-    <package name="SampleAppJenkinsIOS" line-rate="0.5142857142857142" branch-rate="1.0000000000000000" complexity="0.0">
+    <package name="SampleAppJenkinsIOS.SampleAppJenkinsIOS" line-rate="0.5142857142857142" branch-rate="1.0000000000000000" complexity="0.0">
       <classes>
-        <class name="AppDelegate.m" filename="SampleAppJenkinsIOS/AppDelegate.m" line-rate="0.3913043478260870" branch-rate="1.0000000000000000" complexity="0.0">
+        <class name="AppDelegate.m" filename="SampleAppJenkinsIOS/SampleAppJenkinsIOS/AppDelegate.m" line-rate="0.3913043478260870" branch-rate="1.0000000000000000" complexity="0.0">
           <methods/>
           <lines>
             <line number="18" branch="false" hits="1"/>
@@ -35,7 +35,7 @@
             <line number="50" branch="false" hits="0"/>
           </lines>
         </class>
-        <class name="ViewController.m" filename="SampleAppJenkinsIOS/ViewController.m" line-rate="0.5714285714285714" branch-rate="1.0000000000000000" complexity="0.0">
+        <class name="ViewController.m" filename="SampleAppJenkinsIOS/SampleAppJenkinsIOS/ViewController.m" line-rate="0.5714285714285714" branch-rate="1.0000000000000000" complexity="0.0">
           <methods/>
           <lines>
             <line number="19" branch="false" hits="1"/>
@@ -47,7 +47,7 @@
             <line number="27" branch="false" hits="0"/>
           </lines>
         </class>
-        <class name="main.m" filename="SampleAppJenkinsIOS/main.m" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+        <class name="main.m" filename="SampleAppJenkinsIOS/SampleAppJenkinsIOS/main.m" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
           <methods/>
           <lines>
             <line number="12" branch="false" hits="1"/>
