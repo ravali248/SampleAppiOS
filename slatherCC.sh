@@ -1,1 +1,1 @@
-slather coverage --cobertura-xml --output-directory ./"{Build.SourcesDirectory}" --scheme SampleAppJenkinsIOS **/SampleAppJenkinsIOS.xcodeproj/
+slather coverage --cobertura-xml --output-directory ./"{Build.SourcesDirectory}" --scheme SampleAppJenkinsIOS ./s/SampleAppJenkinsIOS/SampleAppJenkinsIOS.xcodeproj/
